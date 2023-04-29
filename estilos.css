@@ -2,36 +2,125 @@
     padding: 0; 
     margin: 0;
     font-family: sans-serif;
-}
-
-
-body > * {  
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3em;
-}
-
-header {
-    height: 10vh; 
-    background: wheat;
-    color: black;
-    position: sticky;
-    top: 0;  
-
-    display:flex;
-    justify-content: space-between;  
-}
-
-nav {
-    display:flex;
-    justify-contents: flex-end;  
-}
-
-nav a {
-    display:block;
-    padding: 0 1em;
+    box-sizing: border-box;
     text-decoration: none;
-    font-size: 1rem;
-    color: black
+    list-style-type: none;
+}
+
+
+body {  
+    height: 100vh;
+    background-color: white;
+}
+
+/*menu*/
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+}
+
+.portfolio{
+    font-size: 28px;
+    font-weight: bold;
+    color: blueviolet;
+}
+
+.menu{
+    display: none;
+}
+
+.nav-bar ul{
+    display: flex;
+}
+
+.nav-bar ul li a{
+    display: block;
+    color: black;
+    font-size: 20px;
+    padding: 10px 25px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    
+}
+
+.nav-bar ul li a:hover{
+    color: white;
+    background: blueviolet;
+}
+
+.nav-bar ul li a.active{
+    color: white;
+    background-color: blueviolet;
+}
+
+@media (max-width: 1200px){
+    header {
+        padding: 0 40px;
+
+    }
+}
+
+@media (max-width: 1050px){
+    header {
+        padding: 0 30px;
+
+    }
+}
+
+@media (max-width: 900px){
+    .menu {
+        display: block;
+        cursor: pointer;
+    }
+    .menu .linha {
+        width: 30px;
+        height: 3px;
+        background-color: black;
+        margin: 5px;
+    }
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-color: white;
+        transition: 0.2s;
+        overflow: hidden;
+    }
+
+    .nav-bar.active{
+        height: 450px;;
+    }
+
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        text-align: center;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 10px;
+        color: black;        
+    }
+
+
+    
+
+
 }
