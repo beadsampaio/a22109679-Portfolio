@@ -24,6 +24,22 @@ header{
     padding: 0 100px;
 }
 
+.section{
+    padding: 2rem 0 4rem;
+}
+
+.section-title{
+    font-size: 25px;
+    text-align: center;
+}
+
+.section-subtitle{
+    display: block;
+    font-size: 15px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
 .portfolio{
     font-size: 28px;
     font-weight: bold;
@@ -41,7 +57,7 @@ header{
 .nav-bar ul li a{
     display: block;
     color: black;
-    font-size: 20px;
+    font-size: 15px;
     padding: 10px 25px;
     border-radius: 50px;
     transition: 0.2s;
@@ -73,7 +89,7 @@ header{
     }
 }
 
-@media (max-width: 900px){
+@media screen and (max-width: 900px){
     .menu {
         display: block;
         cursor: pointer;
@@ -118,9 +134,107 @@ header{
         margin-bottom: 10px;
         color: black;        
     }
+}
+
+    /*Home*/
+
+    .home-container{
+        gap: 1rem;
+
+    }
+
+    .home-content{
+        grid-template-columns: .25f 3fr;
+        align-items: center;
+    }
+
+    .home-data{
+        margin-left: 15%;
+        margin-right: 50%;
+    }
+
+    #name{
+        font-size: 25px;
+        color: blueviolet;
+        
+        margin-bottom: 5px;
+    }
 
 
+    .hi{
+        font-size: medium;
+    }
+
+    .prof{
+        font-size: small;
+        
+        margin-bottom: 5px;
+    }
+
+    .prof + p{
+        font-size:x-small;        
+        margin-bottom: 15px;
+    }
+
+    .button{
+        display: inline-block;
+        color: white;
+        background-color: blueviolet;
+        font-size: 15px;
+        padding: 10px 25px;
+        border-radius: 50px;
+        transition: 0.2s;
+        margin: 0 5px;
+
+    }
+
+    .button:hover{
+        background-color: rgb(174, 139, 207);
+    }
+
+    .button-flex {
+        display: inline-flex;
+        align-items: center;
+    }
+
+    .home-img{
+        display: inline-block;
+        margin-right: 20%;
+        margin-left: 60%;
+    }
+
+
+
+    @media screen and (max-width: 900px) {
+        .home-content{
+            grid-template-columns: .5fr 3.5rem;
+            align-items: center;
+        }
+
+        .home-img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 50%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+            align-items: center;
+        }
+        .home-data{
+            width: 60%;
+            margin-top: 50px;
+            margin-bottom: 20px;
+        }
+        .prof + p{
+            font-size:11px;        
+            margin-bottom: 15px;
+        }
+    
+    }
+
+
+    /*About Me*/
     
 
 
-}
+
