@@ -27,10 +27,10 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-me">About me</a></li>
-                <li><a href="projects">Projects</a></li>
-                <li><a href="pw">PW</a></li>
-                <li><a href="about-website">About website</a></li>
-                <li><a href="contact">Contact</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#pw">PW</a></li>
+                <li><a href="#about-website">About website</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
         
@@ -69,21 +69,114 @@
         
         <!--About Me-->
 
-       
+        <section class="about-me section" id="about-me">
+            <h2 class="section-title">About Me</h2>
+            <span class="section-subtitle">My Introduction</span>
+            <div class="about-container container grid">
+                <img src="Untitled design (1).pngu" alt="" class="about-img">
+                <div class="about-data">
+                    <p class="about-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                </div>
+            </div>
+        </section>
 
         <!--Projects-->
 
+        <section class="projects section" id="projects">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-container container grid">
+                
+            </div>
+        </section>
+
         <!--PW-->
+
+        <section class="pw section" id="pw">
+            
+            <h2 class="section-title">Pw</h2>
+            <span class="section-subtitle">JavaScript</span>
+            <div class="calculadora-container container grid">
+                <h1>Calculadora</h1>
+                <div class="container">
+                    <input type="text" id="expression" placeholder="Escreva uma expressão" />
+                    <input type="button" value="Calcular" onclick="calcular()" />
+                    <div id="result" class="resultado"></div>
+                    <input type="button" value="Limpar" onclick="limparResultado()" />
+                </div>
+            </div>
+
+            <script>
+                function calcular() {
+                    var expression = document.getElementById("expression").value;
+                    var result = eval(expression);
+                    document.getElementById("result").innerHTML = result;
+                }
+
+                function limparResultado() {
+                    document.getElementById("result").innerHTML = "";
+                }
+            </script>
+
+            <div class="data-container container grid">
+
+                <h1>Data</h1>
+                <script>
+                    var data = new Date();
+                    var formato = { year: 'numeric', month: 'long', day: 'numeric' };
+                    document.write(data.toLocaleDateString('pt-BR', formato));
+                </script>
+                
+            </div>
+
+            <div class="nome-container container grid">
+                <div class="apresentacao">
+                    <script>
+                        var name = prompt("Qual é o seu nome?");
+                        document.write("Olá, " + name + "!");
+                    </script>
+                </div>
+                <div class="escrever-nome">
+                    <p>Digite seu nome:</p>
+                    <input type="text" id="nameInput" />
+                    <input type="button" value="Salvar" onclick="guardaNome()" />
+                </div>
+                <div class="name" id="nameDisplay"></div>
+                <script>
+                    function guardaNome() {
+                        var nameInput = document.getElementById("nameInput");
+                        var nameDisplay = document.getElementById("nameDisplay");
+                        var name = nameInput.value;
+                        nameDisplay.innerHTML = name;
+                    }
+                </script>
+            </div>
+        </section>
 
         <!--About Website-->
 
+        <section class="about-website section" id="about-website">
+            <h2 class="section-title">About Website</h2>
+            <div class="about-website-container container grid">
+                
+            </div>
+        </section>
+
         <!--Contact-->
+
+        <section class="contacts section" id="contacts">
+            <h2 class="section-title">Contacts</h2>
+            <div class="contacts-container container grid">
+                
+            </div>
+        </section>
 
 
     </main>
 
   
-
+    <footer>
+        <h1>Fazer rodape</h1>
+    </footer>
 
 </body>
 

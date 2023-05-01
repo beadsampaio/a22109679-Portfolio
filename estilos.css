@@ -236,5 +236,79 @@ header{
     /*About Me*/
     
 
+    /*PW*/
+
+    /*Calculadora*/
+
+    .calculadora-container {
+        margin: 0 auto;
+        width: 300px;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0px 0px 10px #ccc;
+    }
+    input[type="text"] {
+        display: block;
+        margin: 0 auto;
+        width: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 20px;
+    }
+    input[type="button"] {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px;
+        width: 100%;
+        border: none;
+        border-radius: 5px;
+        background-color: blueviolet;
+        color: #fff;
+        font-size: 20px;
+        cursor: pointer;
+    }
+    .resultado {
+        display: block;
+        margin: 20px auto 0;
+        padding: 10px;
+        width: 100%;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 20px;
+        text-align: center;
+    }
+
+    @media screen and (max-width: 900px) {
+        .calculadora-container {
+            margin: 0 auto;
+            width: 200px;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px #ccc;
+        }
+
+        input[type="text"] {
+            display: block;
+            margin: 0 auto;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 12px;
+        }
+    }
+
+    /*Data*/
+
+    .data-container, .apresentacao, .name {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 18px;
+
+    }
+
 
 
