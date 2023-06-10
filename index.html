@@ -1,184 +1,248 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beatriz Sampaio</title>
-    <meta name="author" content="Beatriz Sampaio">
-    <meta name="description" content="Portfolio">
-    <meta name="keywords" content="palavras chave">
-    
-    <link  href="estilos.css" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/0d35e9af35.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="novo.css">
     
 </head>
-
 <body>
 
-    <!--menu navegação-->
-    <header>
-        <div class="portfolio">Portfolio</div>
+    <header class="header">
+        <h1>Portfolio</h1>
         <div class="menu">
             <div class="linha"></div>
             <div class="linha"></div>
             <div class="linha"></div>
         </div>
-        <nav class="nav-bar">
-            <ul>
+        <nav class="nav">
+            <ul class="navegacao">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about-me">About me</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#pw">PW</a></li>
-                <li><a href="#about-website">About website</a></li>
+                <li><a href="#about-website">About Website</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
-        
+        <img src="moon.png" id="icon">
     </header>
 
-    <script>
-        menu = document.querySelector(".menu");
-        menu.onclick = function() {
-            navbar = document.querySelector(".nav-bar");
-            navbar.classList.toggle("active")
-        }
-    </script>
-    
+
+
     <main class="main">
+        <section class="home" id="home">
 
-        <!--Home--> 
-        <section class="home section" id="home">
-            <div class="home-container container grid">
-                <div class="home-content grid">
+            <div class="home-data">
+                <h2 class="hi">Hi, I'm</h2>
+                <h1 id="name">Beatriz Sampaio</h1>
+                <h3 class="prof">Student</h3>
+                <p class="description">Estou no 2º ano do curso de Informática de Gestão</p>
+                <a href="#downloadcv" id="download-cv">Download CV</a>       
+            </div>
+
+            <div class="home-img">
+                <img src="Untitled design.png" alt="imagem-home">
+            </div>
+                 
+
+        </section>
+
+        <section class="about-me" id="about-me">
+            <div class="heading">
+                <h1>About Me</h1>
+                <div class="pontos">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 
-                    <div class="home-img">
-                        <img src="Untitled design.png" alt="">
+            </div>
+
+            <div class="about-me-img">
+                <img src="Untitled design.png" alt="" srcset="">
+            </div>
+
+            <div class="about-me-data">
+                <div id="same-line">I'm</div>
+                <span>Beatriz Sampaio</span>
+            </div>
+
+            <div class="about-me-p">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+            </div>
+
+        </section>
+
+        <section class="projects" id="projects">
+
+            <div class="heading">
+                <h1>Projects</h1>
+                <div class="pontos">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>       
+            </div>
+
+            <div class="cartao-1">
+                <div class="cartao-int">
+                    <div class="cart--data cart--data--front">
+                        <h2 class="card--content">Mineweeper</h2>
                     </div>
-                    <div class="home-data">
-                        <h2 class="hi">Hi, I'm</h2>
-                        <h1 id="name">Beatriz Sampaio</h1>
-                        <h3 class="prof">Student</h3>
-                        <p class="description">This is my Portfolio Website</p>
-                        <a href="#downloadcv" class="button button-flex">Download CV</a>
+                    <div class="cart--data cart--data--back">
+                        <h2 class="card--content">Fundamentos de Programação</h2>
                     </div>
-                        
                 </div>
             </div>
-            
-        </section>
-        
-        <!--About Me-->
-
-        <section class="about-me section" id="about-me">
-            <h2 class="section-title">About Me</h2>
-            <span class="section-subtitle">My Introduction</span>
-            <div class="about-container container grid">
-                <img src="Untitled design (1).pngu" alt="" class="about-img">
-                <div class="about-data">
-                    <p class="about-description">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            <div class="cartao-2">
+                <div class="cartao-int">
+                    <div class="cart--data cart--data--front">
+                        <h2 class="card--content"></h2>
+                    </div>
+                    <div class="cart--data cart--data--back">
+                        <h2 class="card--content">Linguagens de Programação 1</h2>
+                    </div>
                 </div>
             </div>
+            <div class="cartao-3">
+                <div class="cartao-int">
+                    <div class="cart--data cart--data--front">
+                        <h2 class="card--content"></h2>
+                    </div>
+                    <div class="cart--data cart--data--back">
+                        <h2 class="card--content">Algoritmia e Estruturas de Dados</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="cartao-4">
+                <div class="cartao-int">
+                    <div class="cart--data cart--data--front">
+                        <h2 class="card--content"></h2>
+                    </div>
+                    <div class="cart--data cart--data--back">
+                        <h2 class="card--content">Linguagens de Programação 2</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="cartao-5">
+                <div class="cartao-int">
+                    <div class="cart--data cart--data--front">
+                        <h2 class="card--content"></h2>
+                    </div>
+                    <div class="cart--data cart--data--back">
+                        <h2 class="card--content">Base de Dados</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="cartao-6">
+                <div class="cartao-int">
+                    <div class="cart--data cart--data--front">
+                        <h2 class="card--content"></h2>
+                    </div>
+                    <div class="cart--data cart--data--back">
+                        <h2 class="card--content">Redes de Computadores</h2>
+                    </div>
+                </div>
+            </div>
+           
+
         </section>
 
-        <!--Projects-->
+        <section class="pw" id="pw">
+            <div class="heading">
+                <h1>Programação Web</h1>
+                <div class="pontos">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <h4><a href="pw.html">Check here</a></h4>
+        </section>
 
-        <section class="projects section" id="projects">
-            <h2 class="section-title">Projects</h2>
-            <div class="projects-container container grid">
+        <section class="about-website" id="about-website">
+            <div class="heading">
+                <h1>About Website</h1>
+                <div class="pontos">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
                 
             </div>
         </section>
 
-        <!--PW-->
+        <section class="contact" id="contact">
+           
 
-        <section class="pw section" id="pw">
-            
-            <h2 class="section-title">Pw</h2>
-            <span class="section-subtitle">JavaScript</span>
-            <div class="calculadora-container container grid">
-                <h1>Calculadora</h1>
-                <div class="container">
-                    <input type="text" id="expression" placeholder="Escreva uma expressão" />
-                    <input type="button" value="Calcular" onclick="calcular()" />
-                    <div id="result" class="resultado"></div>
-                    <input type="button" value="Limpar" onclick="limparResultado()" />
-                </div>
-            </div>
-
-            <script>
-                function calcular() {
-                    var expression = document.getElementById("expression").value;
-                    var result = eval(expression);
-                    document.getElementById("result").innerHTML = result;
-                }
-
-                function limparResultado() {
-                    document.getElementById("result").innerHTML = "";
-                }
-            </script>
-
-            <div class="data-container container grid">
-
-                <h1>Data</h1>
-                <script>
-                    var data = new Date();
-                    var formato = { year: 'numeric', month: 'long', day: 'numeric' };
-                    document.write(data.toLocaleDateString('pt-BR', formato));
-                </script>
-                
-            </div>
-
-            <div class="nome-container container grid">
-                <div class="apresentacao">
-                    <script>
-                        var name = prompt("Qual é o seu nome?");
-                        document.write("Olá, " + name + "!");
-                    </script>
-                </div>
-                <div class="escrever-nome">
-                    <p>Digite seu nome:</p>
-                    <input type="text" id="nameInput" />
-                    <input type="button" value="Salvar" onclick="guardaNome()" />
-                </div>
-                <div class="name" id="nameDisplay"></div>
-                <script>
-                    function guardaNome() {
-                        var nameInput = document.getElementById("nameInput");
-                        var nameDisplay = document.getElementById("nameDisplay");
-                        var name = nameInput.value;
-                        nameDisplay.innerHTML = name;
-                    }
-                </script>
-            </div>
         </section>
-
-        <!--About Website-->
-
-        <section class="about-website section" id="about-website">
-            <h2 class="section-title">About Website</h2>
-            <div class="about-website-container container grid">
-                
-            </div>
-        </section>
-
-        <!--Contact-->
-
-        <section class="contacts section" id="contacts">
-            <h2 class="section-title">Contacts</h2>
-            <div class="contacts-container container grid">
-                
-            </div>
-        </section>
-
-
     </main>
+    
+    <script src="script.js"></script>
 
-  
-    <footer>
-        <h1>Fazer rodape</h1>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <hr class="footer__divider" />
+            <div class="footer__top">
+                <div>
+                    <h6 class="footer__title">Website</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Home</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About me</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Projects</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">PW</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About Website</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer__title">Educação</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Ensino Secundário</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Licenciatura</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">TFC</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer__title">Programação Web</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">CSS</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">JavaScript</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer__bottom">
+                <span class="info-autor">&copy; 2023 ULHT. Beatriz Sampaio.</span>
+            </div>
+        </div>
     </footer>
-
 </body>
-
-
 </html>

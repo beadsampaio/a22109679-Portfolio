@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="utf-8">
+    <title>Beatriz Sampaio</title>
+    <meta name="author" content="Beatriz Sampaio">
+    <meta name="description" content="Portfolio">
+    <meta name="keywords" content="palavras chave">
+    
+    <link rel="stylesheet" href="novo.css">
+    
+</head>
+
+<body>
+
+    <!--menu navegação-->
+    <header class="header">
+        <h1>Portfolio</h1>
+        <div class="menu">
+            <div class="linha"></div>
+            <div class="linha"></div>
+            <div class="linha"></div>
+        </div>
+        <nav class="nav">
+            <ul class="navegacao">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about-me">About me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#pw">PW</a></li>
+                <li><a href="#about-website">About Website</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <script src="script.js"></script>
+
+    
+    <main class="main">
+
+        <section class="pw" id="pw">
+            <div class="heading">
+                <h1>Programação Web</h1>
+                <div class="pontos">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+            <h3 class="javascript">JavaScript</h3>
+            <div class="calculadora-container container grid">
+                <h1>Calculadora</h1>
+                <div class="container">
+                    <input type="text" id="expression" placeholder="Escreva uma expressão" />
+                    <input type="button" value="Calcular" onclick="calcular()" />
+                    <div id="result" class="resultado"></div>
+                    <input type="button" value="Limpar" onclick="limparResultado()" />
+                </div>
+            </div>
+
+            <script>
+                function calcular() {
+                    var expression = document.getElementById("expression").value;
+                    var result = eval(expression);
+                    document.getElementById("result").innerHTML = result;
+                }
+
+                function limparResultado() {
+                    document.getElementById("result").innerHTML = "";
+                }
+            </script>
+
+            <div class="parallax"></div>
+
+            <div class="data-container container grid">
+
+                <h1>Data</h1>
+                <script>
+                    var data = new Date();
+                    var formato = { year: 'numeric', month: 'long', day: 'numeric' };
+                    document.write(data.toLocaleDateString('pt-BR', formato));
+                </script>
+                
+            </div>
+
+            <div class="parallax"></div>
+
+            <div class="nome-container container grid">
+                <div class="apresentacao">
+                    <script>
+                        var name = prompt("Qual é o seu nome?");
+                        document.write("Olá, " + name + "!");
+                    </script>
+                </div>
+                <div class="escrever-nome">
+                    <p>Digite seu nome:</p>
+                    <input type="text" id="nameInput" />
+                    <input type="button" value="Salvar" onclick="guardaNome()" />
+                </div>
+                <div class="name" id="nameDisplay"></div>
+                <script>
+                    function guardaNome() {
+                        var nameInput = document.getElementById("nameInput");
+                        var nameDisplay = document.getElementById("nameDisplay");
+                        var name = nameInput.value;
+                        nameDisplay.innerHTML = name;
+                    }
+                </script>
+            </div>
+
+            <div class="parallax"></div>
+
+            <div class="svg-element">
+                <h1 class="svg-text">SVG</h1>
+                <svg width="300" height="200">
+                    <polygon points="100,10 40,198 190,78 10,78 160,198"
+                    style="fill:violet;stroke:blueviolet;stroke-width:5;fill-rule:evenodd;" />
+                  </svg>
+            </div>
+
+            <div class="parallax"></div>
+
+            <div class="iframe">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/-x6N1qaVWho" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+            
+        </section>
+
+
+
+    </main>
+
+  
+    <footer class="footer">
+        <div class="footer__container">
+            <hr class="footer__divider" />
+            <div class="footer__top">
+                <div>
+                    <h6 class="footer__title">Website</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Home</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About me</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Projects</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">PW</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">About Website</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Contacts</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer__title">Educação</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Ensino Secundário</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">Licenciatura</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">TFC</a>
+                        </li>
+                    </ul>
+                </div>
+                <div>
+                    <h6 class="footer__title">Programação Web</h6>
+                    <ul class="footer__list">
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">CSS</a>
+                        </li>
+                        <li class="footer__list-item">
+                            <a href="" class="footer__list-link">JavaScript</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <span class="info-autor">&copy; 2023 ULHT. Beatriz Sampaio.</span>
+            </div>
+        </div>
+    </footer>
+
+</body>
+
+
+</html>
